@@ -112,6 +112,7 @@ Example output:
 
 - Python 3.10+
 - [`requests`](https://pypi.org/project/requests/)
+- [`pytest`](https://docs.pytest.org/)
 
 ---
 
