@@ -9,7 +9,7 @@ SCORE_ICONS = {
     4: "✓✓",
 }
 
-_LINE = "─" * 45
+_LINE = "─" * 80
 
 
 def print_strength_report(result: dict) -> None:

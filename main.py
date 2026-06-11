@@ -1,5 +1,6 @@
 import pwinput
 import getpass
+import pyfiglet
 
 from auditor.patterns  import detect_patterns
 from auditor.strength  import estimate_crack_time
@@ -8,11 +9,12 @@ from auditor.report    import print_strength_report, print_breach_report, print_
 
 
 def main() -> None:
-    print("═════════════════════\n  Password Audit Tool")
-    print("═════════════════════\n")
+    print("\033[2J\033[H", end="")
+    _GAP = "═" * 80
+    print(_GAP)
+    print(pyfiglet.figlet_format("Password Audit Tool",font="small"))
+    print(_GAP)
 
-
-    #password = input("  Enter password to audit: ")
     password = pwinput.pwinput(prompt=" Enter password to audit: ", mask="*")
 
     if not password:
