@@ -1,4 +1,4 @@
-
+import pwinput
 import getpass
 
 from auditor.patterns  import detect_patterns
@@ -12,7 +12,8 @@ def main() -> None:
     print("═════════════════════\n")
 
 
-    password = input("  Enter password to audit: ")
+    #password = input("  Enter password to audit: ")
+    password = pwinput.pwinput(prompt=" Enter password to audit: ", mask="*")
 
     if not password:
         print("\n  No password entered. Exiting.")

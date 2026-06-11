@@ -58,7 +58,7 @@
 ```bash
 git clone https://github.com/nayush-ghimire/Password-Audit-Tool.git
 cd Password-Audit-Tool
-pip install requests
+pip install -r requirements.txt
 ```
 
 ## Usage
