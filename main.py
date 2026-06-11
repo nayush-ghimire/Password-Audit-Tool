@@ -19,6 +19,7 @@ def main() -> None:
 
     if not password:
         print("\n  No password entered. Exiting.")
+        input("\nPress Enter to exit...")
         return
 
 
@@ -41,8 +42,8 @@ def main() -> None:
         print(f"\n  [!] HIBP check failed: {e}")
         print(f"      Check your internet connection and try again.")
 
-
     print_verdict(strength["score"], breach_count)
+    input("\nPress Enter to exit...")
 
 
 if __name__ == "__main__":
