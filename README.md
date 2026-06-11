@@ -53,49 +53,63 @@
 
 ---
 
-## Installation
+# Installation
 
+<div align="center">
+  
+<h1>Download Latest Version Here</h1>
+
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-2ea44f?style=for-the-badge&logo=github)](https://github.com/nayush-ghimire/Password-Audit-Tool/releases)
+
+</div>
+
+## Using the source code
+If you wish to manually use the source code , follow the following steps:
 ```bash
 git clone https://github.com/nayush-ghimire/Password-Audit-Tool.git
 cd Password-Audit-Tool
 pip install -r requirements.txt
 ```
-
-## Usage
-
-```bash
+Usage
+```
 python main.py
 ```
 
 Example output:
 
 ```
-═════════════════════
-  Password Audit Tool
-═════════════════════
+════════════════════════════════════════════════════════════════════════════════
+___                                                     _       _                   _   _      _____             _
+| _ \__ _ _______   _   _____ _ _ __| |    /_\   _   _  __| (_) |_  |_   _|__  ___ |  |
+|  _/ _` (_-<_-< V  V / _ \ |   '_/ _' |   / _  \    | | / _` |  |  _|     | |/ _ \/ _ \ |  |
+|_| \__,_/__/__/ \_/\_/\__/ | _| \___| /_/ \_\_,_ \__,_|_|\__|    |_|\_/\__/ |_|
 
-  Enter password to audit: ••••••••
+════════════════════════════════════════════════════════════════════════════════
+ Enter password to audit: ************
 
-─────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────
   STRENGTH ANALYSIS
-─────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────
   Rating      : ✓✓  Very Strong
-  Entropy     : 65.6 bits
-  Charset     : 94 possible characters
-  Length      : 10 characters
-  Crack time  : millions of years  (brute force, GPU cluster)
+  Entropy     : 76.7 bits
+  Charset     : 84 possible characters
+  Length      : 12 characters
+  Crack time  : 20 thousand years  (brute force, GPU cluster)
   Wordlist    : ✓  Not found in local wordlist database.
-─────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────
 
-─────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────
   BREACH CHECK  (Have I Been Pwned)
-─────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────
   ✓  Not found in any known breach database.
   Note: absence here does not guarantee safety.
-─────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────
 
   VERDICT
   ✓  LOOKS GOOD — strong and not found in breaches.
+
+
+Press Enter to exit...
 ```
 
 ---
